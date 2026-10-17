@@ -1,27 +1,31 @@
-k-means Algorithm  (Unsupervised Algo)
+# K-Means Clustering
 
-Code : Numpy mathematics and Pandas library without sklearn ML library
+Code: Python, NumPy, Pandas, and Matplotlib; K-means is implemented without
+scikit-learn.
 
-Dataset: Mall Customers Segmentation https://www.kaggle.com/code/abdallahwagih/customers-segmentation-unsupervised-techniques
+Dataset: Mall Customers dataset, included as `Mall_Customers.csv` (200
+customers).
 
-Description:  
-The Mall Customers Dataset provides data on 200 individuals who visit a mall, including demographic information, annual income, and spending habits.   
-This dataset is useful for exploratory data analysis, customer segmentation, and clustering tasks (e.g., K-means clustering).
+## About
 
-Dataset Summary :-
-Rows: 200
-Columns: 5
+This is an unsupervised learning project: K-means groups customers by
+similarity rather than predicting a labelled outcome. The notebook clusters
+customers using gender, age, annual income (in thousands of dollars), and
+spending score (1-100). The unique `CustomerID` column is excluded.
 
-CustomerID: A unique identifier for each customer (integer).  
-Genre: The gender of the customer (Male/Female).  
-Age: The age of the customer (integer).  
-Annual Income (k$): Annual income of the customer in thousands of dollars (integer).  
-Spending Score (1-100): A score assigned by the mall based on customer behavior and spending patterns (integer).  
+## What I am learning
 
-Potential Use Cases :-
-Customer Segmentation: Group customers based on their income and spending habits.  
-Behavioral Analysis: Explore how factors like gender, age, and income influence spending scores.  
-Clustering: Apply algorithms such as K-means to identify clusters of customers with similar characteristics.  
-Targeted Marketing Campaigns: Use the insights to create personalized promotions for different customer segments.   
+- Exploring the customer data and encoding gender as a numeric feature.
+- Implementing K-means assignment and centroid-update steps with NumPy,
+  including convergence checks and empty-cluster handling.
+- Measuring cluster fit with inertia and seeing how random centroid
+  initialization can lead to different results.
+- Repeating clustering with multiple initializations and selecting the run
+  with the lowest inertia.
+- Using the elbow method and a manually calculated silhouette score to assess
+  cluster choices.
+- Assigning a new customer to its nearest learned centroid.
 
+## Reference
 
+https://www.kaggle.com/code/abdallahwagih/customers-segmentation-unsupervised-techniques
