@@ -1,7 +1,7 @@
 # Machine-Learning-Projects
 
-1. linear_regression
-2. logistic_regression_BCE
-3. logistic_regression_softmax
-4. k_means_unsupervised
-5. sklearn_models_BCE
+1. linear_regression - mathematical implementation of linear regression with mean squared error cost function
+2. logistic_regression_BCE - mathematical implementation of logistic regression with binary cross entropy loss function
+3. logistic_regression_softmax - mathematical implementation of logistic regression with softmax activation and cross entropy loss function
+4. k_means_unsupervised - mathematical implementation of k-means clustering algorithm
+5. sklearn_models_BCE - comparison of scikit-learn implementations of logistic regression with binary cross entropy loss function
