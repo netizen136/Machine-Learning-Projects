@@ -9,7 +9,3 @@ env/
 # Jupyter local state and checkpoints
 .ipynb_checkpoints/
 
-# Ignore generated model runs, but keep the shared Support_Vector_Machine folder
-# and its contents available to Git.
-saved_models/*
-!saved_models/Support_Vector_Machine_201026_040025/**
